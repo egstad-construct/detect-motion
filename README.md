@@ -1,4 +1,4 @@
-# Detect Preferred Color Scheme 🐛️ 🔍️ 👀️
+# Detect Prefers Reduced Motion 🐛️ 🔍️ 👀️
 
 > A micro ES6 module (~0.5KB) for detecting a users `prefers-reduced-motion` and watching for changes.
 
