@@ -10,23 +10,23 @@
 
 ## Installation
 
-```js
-npm install @egstad/detect-motion
+``` js
+npm install @egstad / detect - motion
 ```
 
 ## Usage
 
-```js
+``` js
 import detectMotion from '@egstad/detect-motion'
 
 // watch for `reducedMotionUpdated` events
 window.addEventListener('reducedMotionUpdated', (e) => {
-  // `e.detail.reduce` returns a boolean
-  if (e.detail.reduce) {
-    // remove animations here...
-  } else {
-    // add animations here...
-  }
+    // `e.detail.reduce` returns a boolean
+    if (e.detail.reduce) {
+        // remove animations here...
+    } else {
+        // add animations here...
+    }
 })
 
 // 1. fetch current motion preference
@@ -39,7 +39,7 @@ detectMotion.watch()
 
 The `watch()` method is more than likely all you'll need. Here's a list of what each method in the module does.
 
-```js
+``` js
 // 1. fetch current motion preference
 // 2. dispatch result via 'reducedMotionUpdated'
 detectMotion.get()
