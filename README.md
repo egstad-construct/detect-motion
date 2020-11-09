@@ -1,4 +1,4 @@
-# Detect Prefers Reduced Motion 🐛️ 🔍️ 👀️
+# Detect Prefers Reduced Motion 🥴 🔍️ 👀️
 
 > A micro ES6 module (~0.5KB) for detecting a users `prefers-reduced-motion` and watching for changes.
 
@@ -40,7 +40,7 @@ detectMotion.watch()
 The `watch()` method is more than likely all you'll need. Here's a list of what each method in the module does.
 
 ```js
-// 1. fetch preferred theme
+// 1. fetch current motion preference
 // 2. dispatch result via 'reducedMotionUpdated'
 detectMotion.get()
 
