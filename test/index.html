@@ -11,6 +11,16 @@
       --foreground: white;
     }
 
+    @keyframes loop {
+      0%,
+      100% {
+        transform: translate3d(0,0,0) scale(1);
+      }
+      50% {
+        transform: translate3d(0,0,0) scale(0.8);
+      }
+    }
+
     html,
     body {
       width: 100%;
@@ -29,9 +39,14 @@
       padding: 1em;
       text-transform: lowercase;
       text-align: center;
+      animation: loop infinite 3s ease-in-out;
     }
 
-    #currentTheme {
+    html.reduce-motion h1 {
+      animation: none;
+    }
+
+    #currentMotionPref {
       background: var(--foreground);
       color: var(--background);
       border-radius: 0.25em;
@@ -40,7 +55,7 @@
   </style>
 </head>
 <body>
-  <h1>Your theme is currently set to: <span id="currentTheme"></span></h1>
+  <h1>prefers-reduced-motion: <span id="currentMotionPref"></span></h1>
   <script src="./app.js"></script>
 </body>
 </html>

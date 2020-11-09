@@ -1,7 +1,7 @@
-const mediaQuery = window.matchMedia("(prefers-color-scheme: dark)");
+const mediaQuery = window.matchMedia('(prefers-reduced-motion: reduce)')
 
 const watch = () => {
-  mediaQuery.addEventListener("change", get, false);
+  mediaQuery.addEventListener('change', get, false)
   get()
 }
 
@@ -10,15 +10,12 @@ const teardown = () => {
 }
 
 export const get = () => {
-  const theme = ["dark", "light", "no-preference"].find(
-    (scheme) => window.matchMedia(`(prefers-color-scheme: ${scheme})`).matches
-  );
-
-  const event = new CustomEvent("colorSchemeUpdated", {
+  const event = new CustomEvent("reducedMotionUpdated", {
     detail: {
-      theme,
+      reduce: mediaQuery.matches
     },
   });
+
   window.dispatchEvent(event);
 }
 
