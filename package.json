@@ -1,6 +1,6 @@
 {
   "name": "@egstad/detect-motion",
-  "version": "1.0.2",
+  "version": "1.0.3",
   "description": "A micro ES6 module (~0.5KB) for detecting prefers-reduced-motion and watching for changes.",
   "main": "index.js",
   "scripts": {
