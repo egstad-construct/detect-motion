@@ -23,9 +23,9 @@ import detectMotion from '@egstad/detect-motion'
 window.addEventListener('reducedMotionUpdated', (e) => {
   // `e.detail.reduce` returns a boolean
   if (e.detail.reduce) {
-    // remove animations here if
+    // remove animations here...
   } else {
-    // add animations here
+    // add animations here...
   }
 })
 
