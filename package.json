@@ -15,13 +15,12 @@
     "url": "git+https://github.com/egstad-construct/detect-motion.git"
   },
   "keywords": [
-    "prefers-color-scheme",
-    "color",
-    "scheme",
-    "theme",
-    "theme-changer",
-    "dark-mode",
-    "light-mode",
+    "prefers-reduced-motion",
+    "accessibility",
+    "a11y",
+    "reduce",
+    "motion",
+    "ui",
     "es6",
     "module"
   ],
